@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition Questions</title>
+    <link rel="stylesheet" href="mathOp.css">
+
+    
+
+
+</head>
+<body style="background-image: url(aabb.jpg)">
+    
+    <form class="form" id="form">
+        <p>Addition Question</p>
+        <h1 id="question">2 + 2</h1>
+        <!--Input from user-->
+        <input type="text" class="userInput" id="userInput" 
+        placeholder="Enter Your Answer" autofocus>
+        <button type="submit" class="submitButton">Submit</button>
+    </form>
+
+    <script>
+        const num1 = Math.ceil(Math.random()*100);
+        const num2 = Math.ceil(Math.random()*100);
+
+        const questionEl = document.getElementById("question");
+        questionEl.innerHTML = num1 + " + " + num2;
+
+        const correctAns = num1 + num2;
+
+        const inputEl = document.getElementById("userInput");
+
+        const formEl = document.getElementById("form");
+        formEl.addEventListener("submit", ()=>{
+            const userAns = +inputEl.value
+    
+            if(userAns === correctAns){
+                window.alert("Correct Answer")
+            } else {
+                window.alert("Wrong Answer - Answer: " + correctAns)
+            }
+        })
+    </script>
+</body>
+</html>

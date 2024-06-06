@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+    text-align: center;
+    
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.form{
+   background-color: white;
+   padding: 20px;
+   box-shadow: 0 4px 8px;
+   border-radius: 10px;
+}
+
+p{
+    font-size: 30px;
+    font-family: 'Century Gothic';
+    color:grey;
+}
+
+.userInput{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    border: solid 4px grey;
+}
+
+.submitButton{
+    background-color: grey;
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Century Gothic';
+    margin: 20px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submitButton:hover{
+    filter: brightness(0.8)
+}
